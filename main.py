@@ -16,6 +16,7 @@ for _ in range(0,100):
     t.left(int(random.choice(angle_list)))
 
 
+
 # Combine Shape
 # for i in range(3,10):
 #     t.color(random.choice(color_list))
