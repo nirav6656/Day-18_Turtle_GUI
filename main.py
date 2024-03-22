@@ -4,9 +4,9 @@ import random
 # Create a turtle object
 t = Turtle()
 t.color("green")
-t.width(15)
+t.width(2)
 t.shape("circle")
-t.speed(10)
+t.speed(0)
 turtle.colormode(255)
 # Function to generate colors
 
@@ -19,15 +19,19 @@ def color_gen():
 
 
 
-angle_list = ["0","90","180","360"]
+angle_list = ["0","90","180","270"]
 
 # Random Walk
-for _ in range(0,100):
+# for _ in range(0,100):
+#     t.color(color_gen())
+#     t.forward(25)
+#     t.left(int(random.choice(angle_list)))
+
+# Spirograph
+for _ in range(0,121):
     t.color(color_gen())
-    t.forward(25)
-    t.left(int(random.choice(angle_list)))
-
-
+    t.circle(100)
+    t.left(3)
 
 # Combine Shape
 # for i in range(3,10):
