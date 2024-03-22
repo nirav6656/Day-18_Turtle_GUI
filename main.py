@@ -1,3 +1,4 @@
+import turtle
 from turtle import Turtle, Screen
 import random
 # Create a turtle object
@@ -6,13 +7,23 @@ t.color("green")
 t.width(15)
 t.shape("circle")
 t.speed(10)
+turtle.colormode(255)
+# Function to generate colors
 
-color_list = ["green","blue","red"]
+def color_gen():
+    r = random.randint(0,255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_color = (r, g, b)
+    return random_color
+
+
+
 angle_list = ["0","90","180","360"]
 
 # Random Walk
 for _ in range(0,100):
-    t.color(random.choice(color_list))
+    t.color(color_gen())
     t.forward(25)
     t.left(int(random.choice(angle_list)))
 
