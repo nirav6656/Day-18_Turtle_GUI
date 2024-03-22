@@ -1,16 +1,54 @@
-# This is a sample Python script.
+from turtle import Turtle, Screen
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Create a turtle object
+t = Turtle()
+t.color("green")
+t.width(3)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Triangle
+# for _ in range(3):
+#     t.forward(100)
+#     t.left(120)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Square
+# for _ in range(4):
+#     t.forward(100)
+#     t.left(90)
+
+# Pentagon
+# for _ in range(5):
+#     t.forward(100)
+#     t.left(72)
+
+
+# Hexagon
+# for _ in range(6):
+#     t.forward(100)
+#     t.left(60)
+
+# Heptagon
+# for _ in range(7):
+#     t.forward(100)
+#     t.left(51.43)
+
+# Octagon
+# for _ in range(8):
+#     t.forward(100)
+#     t.left(45)
+
+# Nonagon
+# for _ in range(9):
+#     t.forward(100)
+#     t.left(40)
+
+# Decagon
+# for _ in range(10):
+#     t.forward(100)
+#     t.left(36)
+
+
+
+s = Screen()
+s.exitonclick()
