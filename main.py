@@ -7,9 +7,6 @@ t.width(15)
 t.shape("circle")
 t.speed(10)
 
-
-
-
 color_list = ["green","blue","red"]
 angle_list = ["0","90","180","360"]
 
