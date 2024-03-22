@@ -3,19 +3,26 @@ import random
 # Create a turtle object
 t = Turtle()
 t.color("green")
-t.width(3)
-
+t.width(15)
+t.shape("circle")
+t.speed(10)
 color_list = ["green","blue","red"]
+angle_list = ["0","90","180","360"]
+
+# Random Walk
+for _ in range(0,100):
+    t.color(random.choice(color_list))
+    t.forward(25)
+    t.left(int(random.choice(angle_list)))
+
 
 # Combine Shape
-for i in range(3,10):
-    t.color(random.choice(color_list))
-    for _ in range(i):
-        angle = 180 - (((i-2)*180)/i)
-        t.forward(100)
-        t.left(angle)
-
-
+# for i in range(3,10):
+#     t.color(random.choice(color_list))
+#     for _ in range(i):
+#         angle = 180 - (((i-2)*180)/i)
+#         t.forward(100)
+#         t.left(angle)
 
 # Triangle
 # for _ in range(3):
